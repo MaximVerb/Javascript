@@ -4,21 +4,22 @@
 
 let gradeCalc = function(score, total) {
 let x = (score/total)*100;
+let char = ''; 
 switch(x) {
-case x>=89:
-char = 'A';
+case (x>=89):
+let char = 'A';
 break;
-case x>=80:
-char = 'B';
+case (x>=80):
+let char = 'B';
 break;
-case x>=70:
-char = 'C';
+case (x>=70):
+let char = 'C';
 break;
-case x>=60
-char = 'D';
+case (x>=60):
+let char = 'D';
 break;
-case x>=0:
-char = 'F';
+case (x>=0):
+let char = 'F';
 break;
 }
 return `Het cijfer dat je behaald hebt is gelijk aan ${char}.Het percentage dat je behaald hebt is (${x}%)`;
